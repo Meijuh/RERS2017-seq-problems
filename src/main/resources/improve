@@ -4,7 +4,7 @@ cp "$1" "$1.bla"
 file="$1.bla"
 
 # open the class
-cat <(echo "package nl.utwente.fmt.rers.problems.seq;") <(sed '$ s/}$//g' "$file") <(echo "
+cat <(echo "package nl.utwente.fmt.rers.problems.seq;") <(sed '$ s/}$//g' "$file" | sed 's/public boolean/private boolean/g' | sed 's/public String/private String/g' | sed 's/public int/private int/g') <(echo "
 
 	
 	private String output = null;
@@ -22,7 +22,7 @@ cat <(echo "package nl.utwente.fmt.rers.problems.seq;") <(sed '$ s/}$//g' "$file
 	}
 	
 	@Override
-	public void reset() {") <(grep -o "public[^=]\+=[^\n]\+" "$file" | sed 's/public//g' | sed 's/int\[\]//g' | sed 's/int//g' | sed 's/boolean//g' | sed 's/String//g' | sed 's/{/new int[] {/g') <(echo "}}") | sed 's/public \+void \+calculateOutput(/@Override public void calculateOutput(/g' | sed 's/public class Problem\([0-9]\+\)/public class Problem\1 implements Problem/g' | sed 's/System\.out\.println("\([A-Z]\)")/output = "\1"/g' > "$1"
+	public void reset() {") <(grep -o "public[^=]\+=[^\n]\+" "$file" | sed 's/public//g' | sed 's/int\[\]//g' | sed 's/int//g' | sed 's/boolean//g' | sed 's/String//g' | sed 's/{/new int[] {/g') <(echo "}}") | sed 's/public \+void \+calculateOutput(/@Override public void calculateOutput(/g' | sed 's/public class Problem\([0-9]\+\)/import lombok.EqualsAndHashCode;\n@EqualsAndHashCode(exclude={"stdin", "inputs", "output", "cf"}) public class Problem\1 implements Problem/g' | sed 's/System\.out\.println("\([A-Z]\)")/output = "\1"/g' > "$1"
 	
 rm "$file"
 	
