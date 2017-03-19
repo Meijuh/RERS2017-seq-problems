@@ -18,4 +18,15 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+    <build>
+    <resources>
+        <resource>
+            <directory>src/main/resources</directory>
+            <excludes>
+                <exclude>*.java</exclude>
+            </excludes>
+            <filtering>false</filtering>
+        </resource>
+    </resources>
+</build>
 </project>
