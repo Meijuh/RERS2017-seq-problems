@@ -2,84 +2,85 @@ package nl.utwente.fmt.rers.problems.seq;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Problem23 implements Problem {
+import lombok.EqualsAndHashCode;
+@EqualsAndHashCode(exclude={"stdin", "inputs", "output", "cf"}) public class Problem23 implements Problem {
 	static BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
 
 	private String[] inputs = {"E","F","A","G","B","H","C","I","J","D"};
 
-	public int a130 = 9;
-	public int a58 = -33;
-	public int[] a72 = {3,4,5,6,7,8,9,10};
-	public String a173 = "e";
-	public String a92 = "e";
-	public int a61 = 15;
-	public int[] a108 = {80,81,82,83,84,85};
-	public int[] a60 = {86,87,88,89,90,91};
-	public int[] a129 = {92,93,94,95,96,97};
-	public int[] a185 = a129;
-	public int a195 = 6;
-	public String a93 = "e";
-	public String a146 = "e";
-	public int a12 = -135;
-	public int[] a140 = {6,7,8,9,10,11,12,13};
-	public int a111 = 10;
-	public boolean cf = true;
-	public int[] a171 = {4,5,6,7,8,9,10,11};
-	public int a120 = 4;
-	public String a68 = "f";
-	public int[] a148 = {9,10,11,12,13,14,15,16};
-	public int[] a103 = {88,89,90,91,92,93};
-	public int[] a86 = {94,95,96,97,98,99};
-	public int[] a107 = {100,101,102,103,104,105};
-	public int[] a156 = a103;
-	public int[] a38 = {5,6,7,8,9,10,11,12};
-	public int a98 = -65;
-	public int a182 = 8;
-	public int a117 = 9;
-	public int a166 = 2;
-	public int a66 = 1;
-	public int a85 = 3;
-	public int[] a113 = {20,21,22,23,24,25};
-	public int[] a128 = {26,27,28,29,30,31};
-	public int[] a199 = {32,33,34,35,36,37};
-	public int[] a10 = a113;
-	public int[] a137 = {5,6,7,8,9,10,11,12};
-	public int a17 = 4;
-	public int[] a106 = {1,2,3,4,5,6,7,8};
-	public int[] a135 = {4,5,6,7,8,9,10,11};
-	public int a168 = 10;
-	public int a25 = 103;
-	public int a174 = 10;
-	public int[] a49 = {37,38,39,40,41,42};
-	public int[] a57 = {43,44,45,46,47,48};
-	public int[] a52 = {49,50,51,52,53,54};
-	public int[] a19 = a52;
-	public int a51 = 49;
-	public int[] a172 = {8,9,10,11,12,13,14,15};
-	public int[] a37 = {67,68,69,70,71,72};
-	public int[] a198 = {73,74,75,76,77,78};
-	public int[] a40 = {79,80,81,82,83,84};
-	public int[] a44 = a37;
-	public int a158 = -2;
-	public String a7 = "h";
-	public int a169 = 169;
-	public int a157 = 13;
-	public int a16 = 6;
-	public int[] a165 = {87,88,89,90,91,92};
-	public int[] a55 = {93,94,95,96,97,98};
-	public int[] a149 = {99,100,101,102,103,104};
-	public int[] a180 = a165;
-	public int[] a73 = {0,1,2,3,4,5};
-	public int[] a18 = {6,7,8,9,10,11};
-	public int[] a115 = {12,13,14,15,16,17};
-	public int[] a150 = a73;
-	public int[] a105 = {82,83,84,85,86,87};
-	public int[] a39 = {88,89,90,91,92,93};
-	public int[] a42 = {94,95,96,97,98,99};
-	public int[] a90 = a42;
-	public int a43 = 14;
-	public int a27 = 4;
-	public int a70 = -34;
+	private int a130 = 9;
+	private int a58 = -33;
+	private int[] a72 = {3,4,5,6,7,8,9,10};
+	private String a173 = "e";
+	private String a92 = "e";
+	private int a61 = 15;
+	private int[] a108 = {80,81,82,83,84,85};
+	private int[] a60 = {86,87,88,89,90,91};
+	private int[] a129 = {92,93,94,95,96,97};
+	private int[] a185 = a129;
+	private int a195 = 6;
+	private String a93 = "e";
+	private String a146 = "e";
+	private int a12 = -135;
+	private int[] a140 = {6,7,8,9,10,11,12,13};
+	private int a111 = 10;
+	private boolean cf = true;
+	private int[] a171 = {4,5,6,7,8,9,10,11};
+	private int a120 = 4;
+	private String a68 = "f";
+	private int[] a148 = {9,10,11,12,13,14,15,16};
+	private int[] a103 = {88,89,90,91,92,93};
+	private int[] a86 = {94,95,96,97,98,99};
+	private int[] a107 = {100,101,102,103,104,105};
+	private int[] a156 = a103;
+	private int[] a38 = {5,6,7,8,9,10,11,12};
+	private int a98 = -65;
+	private int a182 = 8;
+	private int a117 = 9;
+	private int a166 = 2;
+	private int a66 = 1;
+	private int a85 = 3;
+	private int[] a113 = {20,21,22,23,24,25};
+	private int[] a128 = {26,27,28,29,30,31};
+	private int[] a199 = {32,33,34,35,36,37};
+	private int[] a10 = a113;
+	private int[] a137 = {5,6,7,8,9,10,11,12};
+	private int a17 = 4;
+	private int[] a106 = {1,2,3,4,5,6,7,8};
+	private int[] a135 = {4,5,6,7,8,9,10,11};
+	private int a168 = 10;
+	private int a25 = 103;
+	private int a174 = 10;
+	private int[] a49 = {37,38,39,40,41,42};
+	private int[] a57 = {43,44,45,46,47,48};
+	private int[] a52 = {49,50,51,52,53,54};
+	private int[] a19 = a52;
+	private int a51 = 49;
+	private int[] a172 = {8,9,10,11,12,13,14,15};
+	private int[] a37 = {67,68,69,70,71,72};
+	private int[] a198 = {73,74,75,76,77,78};
+	private int[] a40 = {79,80,81,82,83,84};
+	private int[] a44 = a37;
+	private int a158 = -2;
+	private String a7 = "h";
+	private int a169 = 169;
+	private int a157 = 13;
+	private int a16 = 6;
+	private int[] a165 = {87,88,89,90,91,92};
+	private int[] a55 = {93,94,95,96,97,98};
+	private int[] a149 = {99,100,101,102,103,104};
+	private int[] a180 = a165;
+	private int[] a73 = {0,1,2,3,4,5};
+	private int[] a18 = {6,7,8,9,10,11};
+	private int[] a115 = {12,13,14,15,16,17};
+	private int[] a150 = a73;
+	private int[] a105 = {82,83,84,85,86,87};
+	private int[] a39 = {88,89,90,91,92,93};
+	private int[] a42 = {94,95,96,97,98,99};
+	private int[] a90 = a42;
+	private int a43 = 14;
+	private int a27 = 4;
+	private int a70 = -34;
 
 private  void calculateOutputm36(String input) {
     if(((a70 <=  -29 && (((((a27 == a135[0] && a12 <=  -119) && (a146.equals("e"))) && a85 == a72[0]) && (92 == a180[5])) && (89 == a156[1]))) && (input.equals(inputs[2]) && ((((-117 < a25) && (-74 >= a25)) && cf) && (a43 == 9))))) {
@@ -3567,7 +3568,6 @@ public static void main(String[] args) throws Exception {
 		}
 	}
 }
-
 
 
 	

@@ -2,26 +2,27 @@ package nl.utwente.fmt.rers.problems.seq;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Problem22 implements Problem {
+import lombok.EqualsAndHashCode;
+@EqualsAndHashCode(exclude={"stdin", "inputs", "output", "cf"}) public class Problem22 implements Problem {
 	static BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
 
 	private String[] inputs = {"B","E","C","A","D"};
 
-	public int a64 = 13;
-	public int a2 = 12;
-	public int a74 = 2;
-	public String a174 = "h";
-	public String a181 = "e";
-	public int a92 = 12;
-	public int a132 = 7;
-	public int a175 = 5;
-	public int a182 = -171;
-	public int a154 = 6;
-	public String a173 = "e";
-	public int a112 = -161;
-	public int a120 = 8;
-	public boolean cf = true;
-	public int a18 = 4;
+	private int a64 = 13;
+	private int a2 = 12;
+	private int a74 = 2;
+	private String a174 = "h";
+	private String a181 = "e";
+	private int a92 = 12;
+	private int a132 = 7;
+	private int a175 = 5;
+	private int a182 = -171;
+	private int a154 = 6;
+	private String a173 = "e";
+	private int a112 = -161;
+	private int a120 = 8;
+	private boolean cf = true;
+	private int a18 = 4;
 
 private  void calculateOutputm1(String input) {
     if((((a173.equals("e")) && (((a175 == 5) && ((a181.equals("e")) && ((a120 == 8) && (a154 == 1)))) && a112 <=  -158)) && (a182 <=  -158 && ((cf && (input.equals("D"))) && (a132 == 7))))) {
@@ -1161,7 +1162,6 @@ public static void main(String[] args) throws Exception {
 		}
 	}
 }
-
 
 
 	

@@ -2,60 +2,61 @@ package nl.utwente.fmt.rers.problems.seq;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Problem24 implements Problem {
+import lombok.EqualsAndHashCode;
+@EqualsAndHashCode(exclude={"stdin", "inputs", "output", "cf"}) public class Problem24 implements Problem {
 	static BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
 
 	private String[] inputs = {"B","E","C","A","D"};
 
-	public String a118 = "g";
-	public String a94 = "i";
-	public int a142 = 11;
-	public String a48 = "g";
-	public int a133 = 7;
-	public String a19 = "e";
-	public int a145 = 5;
-	public String a1 = "g";
-	public int a175 = 10;
-	public int a72 = 13;
-	public String a76 = "g";
-	public int a119 = 6;
-	public String a46 = "h";
-	public String a45 = "e";
-	public int a177 = 13;
-	public int a92 = 6;
-	public String a144 = "h";
-	public String a171 = "g";
-	public int a128 = 2;
-	public int a29 = 13;
-	public int a83 = 10;
-	public String a102 = "h";
-	public String a0 = "h";
-	public String a180 = "i";
-	public String a125 = "h";
-	public boolean cf = true;
-	public int a163 = 3;
-	public int a60 = 6;
-	public String a17 = "i";
-	public int a129 = 11;
-	public String a176 = "f";
-	public int a173 = 12;
-	public int a54 = 8;
-	public int a10 = 10;
-	public String a195 = "f";
-	public int a70 = 16;
-	public String a12 = "e";
-	public int a146 = 10;
-	public String a132 = "i";
-	public int a15 = 13;
-	public int a28 = 9;
-	public String a34 = "e";
-	public int a109 = 8;
-	public int a84 = 5;
-	public int a168 = 3;
-	public String a89 = "e";
-	public int a42 = 14;
-	public int a181 = 8;
-	public int a169 = 11;
+	private String a118 = "g";
+	private String a94 = "i";
+	private int a142 = 11;
+	private String a48 = "g";
+	private int a133 = 7;
+	private String a19 = "e";
+	private int a145 = 5;
+	private String a1 = "g";
+	private int a175 = 10;
+	private int a72 = 13;
+	private String a76 = "g";
+	private int a119 = 6;
+	private String a46 = "h";
+	private String a45 = "e";
+	private int a177 = 13;
+	private int a92 = 6;
+	private String a144 = "h";
+	private String a171 = "g";
+	private int a128 = 2;
+	private int a29 = 13;
+	private int a83 = 10;
+	private String a102 = "h";
+	private String a0 = "h";
+	private String a180 = "i";
+	private String a125 = "h";
+	private boolean cf = true;
+	private int a163 = 3;
+	private int a60 = 6;
+	private String a17 = "i";
+	private int a129 = 11;
+	private String a176 = "f";
+	private int a173 = 12;
+	private int a54 = 8;
+	private int a10 = 10;
+	private String a195 = "f";
+	private int a70 = 16;
+	private String a12 = "e";
+	private int a146 = 10;
+	private String a132 = "i";
+	private int a15 = 13;
+	private int a28 = 9;
+	private String a34 = "e";
+	private int a109 = 8;
+	private int a84 = 5;
+	private int a168 = 3;
+	private String a89 = "e";
+	private int a42 = 14;
+	private int a181 = 8;
+	private int a169 = 11;
 
 	private void errorCheck() {
 	    if((((a42 == 10) && (a163 == 3)) && (a60 == 4))){
@@ -2132,7 +2133,6 @@ public static void main(String[] args) throws Exception {
 		}
 	}
 }
-
 
 
 	

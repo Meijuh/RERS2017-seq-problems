@@ -2,21 +2,22 @@ package nl.utwente.fmt.rers.problems.seq;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Problem2 implements Problem {
+import lombok.EqualsAndHashCode;
+@EqualsAndHashCode(exclude={"stdin", "inputs", "output", "cf"}) public class Problem2 implements Problem {
 	static BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
 
 	private String[] inputs = {"E","F","A","G","B","H","C","I","J","D"};
 
-	public int a42 = 14;
-	public boolean cf = true;
-	public String a140 = "g";
-	public String a13 = "i";
-	public int a110 = 2;
-	public int a22 = 10;
-	public int a58 = 3;
-	public int a65 = 182;
-	public int a107 = 2;
-	public int a46 = 7;
+	private int a42 = 14;
+	private boolean cf = true;
+	private String a140 = "g";
+	private String a13 = "i";
+	private int a110 = 2;
+	private int a22 = 10;
+	private int a58 = 3;
+	private int a65 = 182;
+	private int a107 = 2;
+	private int a46 = 7;
 
 	private void errorCheck() {
 

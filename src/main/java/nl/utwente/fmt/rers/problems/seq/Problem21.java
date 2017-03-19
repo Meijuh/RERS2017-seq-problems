@@ -2,18 +2,19 @@ package nl.utwente.fmt.rers.problems.seq;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Problem21 implements Problem {
+import lombok.EqualsAndHashCode;
+@EqualsAndHashCode(exclude={"stdin", "inputs", "output", "cf"}) public class Problem21 implements Problem {
 	static BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
 
 	private String[] inputs = {"B","E","C","A","D"};
 
-	public String a166 = "e";
-	public int a175 = 6;
-	public String a167 = "e";
-	public String a62 = "f";
-	public int a52 = 9;
-	public int a176 = 7;
-	public boolean cf = true;
+	private String a166 = "e";
+	private int a175 = 6;
+	private String a167 = "e";
+	private String a62 = "f";
+	private int a52 = 9;
+	private int a176 = 7;
+	private boolean cf = true;
 
 private  void calculateOutputm1(String input) {
     if(((a166.equals("e")) && (((input.equals("B")) && cf) && (a176 == 6)))) {
@@ -406,7 +407,6 @@ public static void main(String[] args) throws Exception {
 		}
 	}
 }
-
 
 
 	

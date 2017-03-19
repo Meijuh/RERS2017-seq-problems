@@ -2,46 +2,47 @@ package nl.utwente.fmt.rers.problems.seq;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Problem10 implements Problem {
+import lombok.EqualsAndHashCode;
+@EqualsAndHashCode(exclude={"stdin", "inputs", "output", "cf"}) public class Problem10 implements Problem {
 	static BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
 
 	private String[] inputs = {"B","E","C","A","D"};
 
-	public String a41 = "i";
-	public int a13 = 13;
-	public int a175 = 10;
-	public int a161 = 13;
-	public int a196 = 10;
-	public int a11 = 10;
-	public boolean cf = true;
-	public String a137 = "g";
-	public String a69 = "i";
-	public int a165 = 9;
-	public int a141 = 12;
-	public int a187 = 7;
-	public String a179 = "h";
-	public String a168 = "h";
-	public String a19 = "e";
-	public String a55 = "g";
-	public String a149 = "h";
-	public int a49 = 4;
-	public String a62 = "h";
-	public int a26 = 12;
-	public String a114 = "i";
-	public int a3 = 11;
-	public String a73 = "h";
-	public String a188 = "h";
-	public int a16 = 8;
-	public int a50 = 11;
-	public String a97 = "g";
-	public String a68 = "e";
-	public int a65 = 11;
-	public int a148 = 6;
-	public int a126 = 9;
-	public int a170 = 15;
-	public int a173 = 7;
-	public String a152 = "g";
-	public int a169 = 2;
+	private String a41 = "i";
+	private int a13 = 13;
+	private int a175 = 10;
+	private int a161 = 13;
+	private int a196 = 10;
+	private int a11 = 10;
+	private boolean cf = true;
+	private String a137 = "g";
+	private String a69 = "i";
+	private int a165 = 9;
+	private int a141 = 12;
+	private int a187 = 7;
+	private String a179 = "h";
+	private String a168 = "h";
+	private String a19 = "e";
+	private String a55 = "g";
+	private String a149 = "h";
+	private int a49 = 4;
+	private String a62 = "h";
+	private int a26 = 12;
+	private String a114 = "i";
+	private int a3 = 11;
+	private String a73 = "h";
+	private String a188 = "h";
+	private int a16 = 8;
+	private int a50 = 11;
+	private String a97 = "g";
+	private String a68 = "e";
+	private int a65 = 11;
+	private int a148 = 6;
+	private int a126 = 9;
+	private int a170 = 15;
+	private int a173 = 7;
+	private String a152 = "g";
+	private int a169 = 2;
 
 	private void errorCheck() {
 	    if((((a169 == 4) && (a41.equals("f"))) && (a62.equals("f")))){
