@@ -3,6 +3,8 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 import lombok.EqualsAndHashCode;
+import lombok.ToString;
+@ToString(exclude={"stdin", "inputs", "output", "cf"})
 @EqualsAndHashCode(exclude={"stdin", "inputs", "output", "cf"}) public class Problem2 implements Problem {
 	static BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
 
